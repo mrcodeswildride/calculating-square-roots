@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculating Square Roots</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Calculating Square Roots</h1>
+
+    <p>
+      This program calculates an approximation of a square root by using the long division method.
+      A number's square root will always be half the digits of the number (rounded up), so if
+      there are not enough iterations to produce enough digits, the remaining digits will be 0
+      to approximate the square root.
+    </p>
+
+    <input type="number" min="0" placeholder="number" autocomplete="off" id="number" />
+    <input
+      type="number"
+      min="1"
+      max="25"
+      placeholder="number of iterations"
+      autocomplete="off"
+      id="iterations"
+    />
+    <button id="squareRootButton">Calculate square root</button>
+
+    <p id="squareRootParagraph"></p>
+  </body>
+</html>
